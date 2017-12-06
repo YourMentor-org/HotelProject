@@ -1,5 +1,6 @@
 # HotelProject
 
-Test
-
-Попытка коммита с Гита
+Сайт по отелям, состящий из 3х страниц:
+search
+hotels
+hotel
