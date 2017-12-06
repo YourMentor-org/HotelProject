@@ -8,19 +8,43 @@
   <div class="page">
     <div class="page__center center">
       <div class="center__header header">
-        <span class="header__logo">Лого</span>
-        <span class="header__title title">
-          <div class="title__title">Гостиницы по лучшим ценам</div>
-          <div class="title__subtitle">JCB - лучший интернет сервис по версии Natinal Geographic Traveler Awards</div>
-        </span>
+        <div class="header__logo">Лого</div>
+        <div class="header__title titles">
+          <div class="titles__title">
+            <h1>
+              Гостиницы по лучшим ценам
+            </h1>
+          </div>
+          <div class="titles__subtitle">
+            <h2>JCB - лучший интернет сервис по версии Natinal Geographic Traveler Awards</h2>
+          </div>
+        </div>
       </div>
       <div class="center__body body">
-        <div class="body__search">поиск</div>
-        <div class="body__input">выбираем параметры</div>
+        <div class="body__search search">
+          <input type="search" class="search__input" placeholder="Направление, город, название отеля: например, Париж, Милан ">
+        </div>
+        <div class="body__input input">
+          <div class="input__data-from data_from">
+            <label class="data_from label">Выберите дату вселения</label>
+            <input type="date" class="data_to" value="23/01/2017">
+          </div>
+          <div class="input__data-to data_to">
+            <label class="data_to label">Выберите дату отъезда</label>
+            <input type="date" class="data_to" value="28/01/2017">
+          </div>
+        </div>
         <div class="body__bottom bottom">
-          <div class="bottom__checkbox">чекбокс</div>
-          <div class="bottom__button">кнопка</div>
-          <div class="bottom__summury">иконки</div>
+          <div class="bottom__checkbox checkbox">
+            <input type="checkBox" class="checkbox__checkbox">
+            <label class="checkBox__label">Добавить перелет и получить скидку</label>
+          </div>
+          <div class="bottom__button button">
+            <button class="button">Начать поиск</button>
+          </div>
+          <div class="bottom__summury summury">
+            <span class="summury__icons">иконки</span>
+          </div>
         </div>
       </div>
     </div>
