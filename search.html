@@ -7,10 +7,10 @@
  <body>
   <div class="page">
     <div class="page__container container">
-      <div class="container__header header">
+      <div class="header">
         <div class="header__logo">Лого</div>
         <div class="header__titles-container">
-          <h1 class="header__title">
+          <h1 class="header__heading">
             Гостиницы по лучшим ценам
           </h1>
           <h2 class="header__subtitle">
@@ -19,24 +19,44 @@
         </div>
       </div>
       <div class="container__form form">
-        <div class="form__search search">
-          <input type="search" class="search__input" placeholder="Направление, город, название отеля: например, Париж, Милан ">
+        <div class="form__search">
+          <input type="search" class="input" placeholder="Направление, город, название отеля: например, Париж, Милан ">
         </div>
-        <div class="form__dates-container dates-container">
-          <div class="dates-container__date date">
-            <label class="date__label">Выберите дату вселения</label>
-            <input type="date" class="date__input" value="23/01/2017">
-          </div>
-          <div class="dates-container__date date">
-            <label class="date__label">Выберите дату отъезда</label>
-            <input type="date" class="date__input" value="28/01/2017">
-          </div>
+        <div class="form__date date">
+          <label class="date__label">Выберите дату вселения</label>
+          <input type="date" class="date__input" value="23/01/2017">
+          <label class="date__label">Выберите дату отъезда</label>
+          <input type="date" class="date__input" value="28/01/2017">
         </div>
-        <input type="checkBox" class="form__checkbox">
-        <label class="form__label-sale">Добавить перелет и получить скидку</label>
-        <button class="form__button">Начать поиск</button>
+        <div class="form__quantity quantity">
+          <label class="quantity__label-adults">Взрослых</label>
+          <select size="1" name="adults[]" class="quantity__select-adults">
+            <option value="1">1</option>
+            <option selected value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          <label class="quantity__label-children">Детей</label>
+          <select size="1" name="children[]" class="quantity__select-children">
+            <option selected value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <div class="form__checkbox-rox checkbox-row">  
+          <input type="checkBox" class="checkbox-row__checkbox-sale">
+          <label class="checkbox-row__label-sale">Добавить перелет и получить скидку</label>
+        </div>  
+        <button class="form__button-search">Начать поиск</button>
         <div class="form__summary summary">
-          <span class="summary__icons">Иконки</span>
+          <span class="summary__dates">Даты</span>
+          <label class="summary__label-nights">3</label>
+          <span class="summary__icon-nights">Ночи</span>
+          <label class="summary__label-adults">2</label>
+          <span class="summary__icon-adults">Взрослых</span>
+          <label class="summary__label-children">1</label> 
+          <span class="summary__icon-children">Ребенок</span>
         </div>
         </div>
       </div>
