@@ -19,16 +19,14 @@
         </div>
       </div>
       <div class="container__form form">
-        <div class="form__search">
-          <input type="search" class="input" placeholder="Направление, город, название отеля: например, Париж, Милан ">
-        </div>
+          <input type="search" class="form__search" placeholder="Направление, город, название отеля: например, Париж, Милан ">
         <div class="form__date date">
           <label class="date__label">Выберите дату вселения</label>
           <input type="date" class="date__input" value="23/01/2017">
           <label class="date__label">Выберите дату отъезда</label>
           <input type="date" class="date__input" value="28/01/2017">
         </div>
-        <div class="form__quantity quantity">
+        <div class="form__quantity-people quantity">
           <label class="quantity__label-adults">Взрослых</label>
           <select size="1" name="adults[]" class="quantity__select-adults">
             <option value="1">1</option>
@@ -48,15 +46,21 @@
           <input type="checkBox" class="checkbox-row__checkbox-sale">
           <label class="checkbox-row__label-sale">Добавить перелет и получить скидку</label>
         </div>  
-        <button class="from_button button">Начать поиск</button>
-        <div class="form__summary summary">
-          <span class="summary__trip-dates_black">Даты</span>
-          <label class="summary__label-nights_black">3</label>
-          <span class="summary__icon-nights_black">Ночи</span>
-          <label class="summary__label-adults_black">2</label>
-          <span class="summary__icon-adults_black">Взрослых</span>
-          <label class="summary__label-children_black">1</label> 
-          <span class="summary__icon-children_black">Ребенок</span>
+        <button class="from_button button button_big button_red">Начать поиск</button>
+        <div class="form__summary summary summary_black">
+          <span class="summary__dates">Даты</span>
+          <span class="summary__item">
+            3
+            <img class="icon icon_moon" src="smiley.gif" alt="Smiley face">
+          </span>
+          <span class="summary__item">
+            2
+            <img class="icon icon_moon" src="smiley.gif" alt="Smiley face">
+          </span>
+          <span class="summary__item">
+            1
+            <img class="icon icon_moon" src="smiley.gif" alt="Smiley face">
+          </span>
         </div>
         </div>
       </div>
