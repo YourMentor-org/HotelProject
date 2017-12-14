@@ -2,51 +2,64 @@
 <html>
  <head>
   <meta charset="utf-8" />
-  <title>Hotel | Search</title>
+  <title>Search</title>
  </head>
  <body>
-  <div class="page">
-    <div class="page__center center">
-      <div class="center__header header">
-        <div class="header__logo">Лого</div>
-        <div class="header__title titles">
-          <div class="titles__title">
-            <h1>
-              Гостиницы по лучшим ценам
-            </h1>
-          </div>
-          <div class="titles__subtitle">
-            <h2>JCB - лучший интернет сервис по версии Natinal Geographic Traveler Awards</h2>
-          </div>
-        </div>
-      </div>
-      <div class="center__body body">
-        <div class="body__search search">
-          <input type="search" class="search__input" placeholder="Направление, город, название отеля: например, Париж, Милан ">
-        </div>
-        <div class="body__input input">
-          <div class="input__data-from data_from">
-            <label class="data_from label">Выберите дату вселения</label>
-            <input type="date" class="data_to" value="23/01/2017">
-          </div>
-          <div class="input__data-to data_to">
-            <label class="data_to label">Выберите дату отъезда</label>
-            <input type="date" class="data_to" value="28/01/2017">
-          </div>
-        </div>
-        <div class="body__bottom bottom">
-          <div class="bottom__checkbox checkbox">
-            <input type="checkBox" class="checkbox__checkbox">
-            <label class="checkBox__label">Добавить перелет и получить скидку</label>
-          </div>
-          <div class="bottom__button button">
-            <button class="button">Начать поиск</button>
-          </div>
-          <div class="bottom__summury summury">
-            <span class="summury__icons">иконки</span>
-          </div>
-        </div>
-      </div>
+  <div class="header">
+    <div class="header__logo">Лого</div>
+    <div class="header__titles-container">
+      <h1 class="header__heading">
+        Гостиницы по лучшим ценам
+      </h1>
+      <h2 class="header__subtitle">
+        JCB - лучший интернет сервис по версии Natinal Geographic Traveler Awards
+      </h2>
+    </div>
+  </div>
+  <div class="container__form form">
+      <input type="search" class="form__search" placeholder="Направление, город, название отеля: например, Париж, Милан ">
+    <div class="form__date date">
+      <label class="date__label">Выберите дату вселения</label>
+      <input type="date" class="date__input" value="23/01/2017">
+      <label class="date__label">Выберите дату отъезда</label>
+      <input type="date" class="date__input" value="28/01/2017">
+    </div>
+    <div class="form__quantity-people quantity">
+      <label class="quantity__label-adults">Взрослых</label>
+      <select size="1" name="adults[]" class="quantity__select-adults">
+        <option value="1">1</option>
+        <option selected value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <label class="quantity__label-children">Детей</label>
+      <select size="1" name="children[]" class="quantity__select-children">
+        <option selected value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </div>
+    <div class="form__checkbox-row checkbox-row">  
+      <input type="checkbox" class="checkbox-row__checkbox-sale">
+      <label class="checkbox-row__label-sale">Добавить перелет и получить скидку</label>
+    </div>  
+    <button class="from_button button button_big button_red">Начать поиск</button>
+    <div class="form__summary summary summary_black">
+      <span class="summary__dates">Даты</span>
+      <span class="summary__item">
+        3
+        <img class="icon icon_moon" src="smiley.gif" alt="Smiley face">
+      </span>
+      <span class="summary__item">
+        2
+        <img class="icon icon_adult" src="smiley.gif" alt="Smiley face">
+      </span>
+      <span class="summary__item">
+        1
+        <img class="icon icon_child" src="smiley.gif" alt="Smiley face">
+      </span>
+    </div>
     </div>
   </div>
  </body>
