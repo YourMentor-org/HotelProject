@@ -17,51 +17,52 @@
       </h2>
     </div>
   </div>
-  <div class="container__form form">
-      <input type="search" class="form__search" placeholder="Направление, город, название отеля: например, Париж, Милан ">
-    <div class="form__date date">
-      <label class="date__label">Выберите дату вселения</label>
-      <input type="date" class="date__input" value="23/01/2017">
-      <label class="date__label">Выберите дату отъезда</label>
-      <input type="date" class="date__input" value="28/01/2017">
-    </div>
-    <div class="form__quantity-people quantity">
-      <label class="quantity__label-adults">Взрослых</label>
-      <select size="1" name="adults[]" class="quantity__select-adults">
-        <option value="1">1</option>
-        <option selected value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-      </select>
-      <label class="quantity__label-children">Детей</label>
-      <select size="1" name="children[]" class="quantity__select-children">
-        <option selected value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-      </select>
-    </div>
-    <div class="form__checkbox-row checkbox-row">  
-      <input type="checkbox" class="checkbox-row__checkbox-sale">
-      <label class="checkbox-row__label-sale">Добавить перелет и получить скидку</label>
-    </div>  
-    <button class="from_button button button_big button_red">Начать поиск</button>
-    <div class="form__summary summary summary_black">
-      <span class="summary__dates">Даты</span>
-      <span class="summary__item">
-        3
-        <img class="icon icon_moon" src="smiley.gif" alt="Smiley face">
-      </span>
-      <span class="summary__item">
-        2
-        <img class="icon icon_adult" src="smiley.gif" alt="Smiley face">
-      </span>
-      <span class="summary__item">
-        1
-        <img class="icon icon_child" src="smiley.gif" alt="Smiley face">
-      </span>
-    </div>
-    </div>
+  <div class="container">
+    <div class="container__form form">
+        <input type="search" class="form__search" placeholder="Направление, город, название отеля: например, Париж, Милан ">
+      <div class="form__date date">
+        <label class="date__label">Выберите дату вселения</label>
+        <input type="date" class="date__input" value="23/01/2017">
+        <label class="date__label">Выберите дату отъезда</label>
+        <input type="date" class="date__input" value="28/01/2017">
+      </div>
+      <div class="form__quantity-people quantity">
+        <label class="quantity__label-adults">Взрослых</label>
+        <select size="1" name="adults[]" class="quantity__select-adults">
+          <option value="1">1</option>
+          <option selected value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        <label class="quantity__label-children">Детей</label>
+        <select size="1" name="children[]" class="quantity__select-children">
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+      <div class="form__checkbox-row checkbox-row">  
+        <input type="checkbox" class="checkbox-row__checkbox-sale">
+        <label class="checkbox-row__label-sale">Добавить перелет и получить скидку</label>
+      </div>  
+      <button class="from__button button button_big button_red">Начать поиск</button>
+      <div class="form__summary summary summary_black">
+        <span class="summary__dates">Даты</span>
+        <span class="summary__item">
+          3
+          <img class="icon icon_moon" src="smiley.gif" alt="Smiley face">
+        </span>
+        <span class="summary__item">
+          2
+          <img class="icon icon_adult" src="smiley.gif" alt="Smiley face">
+        </span>
+        <span class="summary__item">
+          1
+          <img class="icon icon_child" src="smiley.gif" alt="Smiley face">
+        </span>
+      </div>
+    </div> 
   </div>
  </body>
 </html>
